@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |------+------+------+------+------+------+------+------+------+------+------+------|
      * |   `  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  |      |
      * |------+------+------+------+------+------+------+------+------+------+------+------|
-     * |      |      |      |      |      |      | Left | Down |  Up  |Right |  -   |  \   |
+     * |      |      |      | Prev | Next |      | Left | Down |  Up  |Right |  -   |  \   |
      * |------+------+------+------+------+------+------+------+------+------+------+------|
      * |      |      |      |      |      |      | Home | PDN  |  PUP |  End |  =   |      |
      * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -82,7 +82,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_RAISE] = LAYOUT( \
        KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  \
        KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    ______,  \
-       RESET,   BL_INC, RGB_SAI, _______, _______, _______,  KC_LEFT, KC_DOWN, KC_UP,  KC_RIGHT, KC_MINS, KC_BSLS,  \
+       RESET,   BL_INC, RGB_SAI, LGUI(KC_LCBR), LGUI(KC_RCBR), _______,  KC_LEFT, KC_DOWN, KC_UP,  KC_RIGHT, KC_MINS, KC_BSLS,  \
        _______, BL_DEC, _______, _______, _______, _______,  KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_EQL, _______,  \
        _______, _______, _______, _______, _______, MO(_LOWER), MO(_LOWER), _______, KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY  \
     ),
